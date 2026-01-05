@@ -300,7 +300,7 @@ _**NOW COMES THE REAL ATTACK: APC INJECTION**_
 
 Now that we understand APCs, we can define APC Injection.
 
-**WHAT IS APC INJECTION?**
+# **WHAT IS APC INJECTION?**
 
 APC Injection is a process injection technique that abuses Windows’ APC mechanism to execute malicious code inside an existing thread, without creating a new thread.
 
@@ -308,7 +308,7 @@ In simple words:
 
 The attacker injects shellcode into memory and queues it as an APC, waiting for the right moment to execute.
 
-**APC QUEUE**
+# **APC QUEUE**
 
 The APC Queue is a per-thread waiting list where Asynchronous Procedure Calls (APCs) are stored until they can be executed.
 
@@ -323,7 +323,7 @@ APCs wait until execution conditions are met
 Analogy:
 Like background notifications piling up while you study, APCs wait silently in the queue.
 
-**ALERTABLE STATE**
+# **ALERTABLE STATE**
 
 The Alertable State is a special state where a thread temporarily pauses its main execution to process APCs from its APC queue.
 
