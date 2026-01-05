@@ -1,5 +1,8 @@
 # **APC INJECTION**
 
+**INTRODUCTION**
+
+
 <img width="1280" height="697" alt="image" src="https://github.com/user-attachments/assets/28ad2fe6-0394-4eee-bb30-0b62682955a9" />
 
 Imagine you’re listening to your favorite song on Spotify.
@@ -67,7 +70,19 @@ So now WHAT IS A PROCESS IN A COMPUTER?
 
  Now with context to APC injection the attacker will choose a target process like notepad to run their malicious code inside it.
 
- that takes us to our next basic unit THREAD
+ *STATES IN A PROCESS*
+ 1  NEW (being created)
+ 2  READY (Waiting for CPU)
+ 3  RUNNING (executing on CPU)
+ 4  WAITING/BLOCKED
+ 5  READY SUSPENDED (ready, but out of RAM)
+ 6  BLOCKED SUSPENDED (Waiting for I/O/event and out of RAM)
+ 7  TERMINATED/EXIT (finished) 
+
+
+<img src="https://scaler.com/topics/images/process-state-diagram.webp" width="600">
+
+
 
   
 # _**THREAD:**_
@@ -103,7 +118,7 @@ Virtual memory is a technique used by an operating system that lets programs thi
 in other words Virtual memory makes each process think it owns all memory.
 
 But what are the **Objectives** of a Virtual Memory
- * A program does not need to be fully loaded into memory to run; only the required parts are loaded.
+ * A program does not need to be fully loaded into memory(RAM) to run; only the required parts are loaded[Lazy Loading]
  * Programs can be larger than the system’s physical RAM.
  * Virtual memory makes it seem like the system has more memory than it actually does.
  * It uses both RAM and disk space, loading program parts into RAM only when needed.
