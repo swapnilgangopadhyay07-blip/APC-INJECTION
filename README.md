@@ -71,6 +71,7 @@ So now WHAT IS A PROCESS IN A COMPUTER?
  Now with context to APC injection the attacker will choose a target process like notepad to run their malicious code inside it.
 
  *STATES IN A PROCESS*
+ 
  1  NEW (being created)
  
  
