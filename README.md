@@ -114,7 +114,7 @@ But what are the **Objectives** of a Virtual Memory
 
 But how does a Computer use Virtual Memory to manage / run A PROGRAM
 
-well a Virtal Memory also need permission to **READ , WRITE AND EXECUTE** an assigned Process .
+well a Virtal Memory also need permission to **READ , WRITE AND EXECUTE** an assigned Process.
 
 Now each Process has its own private virtual memory that is protected from other processes
 
