@@ -631,8 +631,8 @@ The point is this:
 That’s why APC Injection is powerful.
 And that’s why defenders care about it.
 
-**The demonstration video is attached for reference**
-https://github.com/user-attachments/assets/1ee35fab-2194-40bb-bf52-6a689aefae8a
+**The demonstration video is attached below for reference**
+
 
 ![APC EARLY BIRD Injection](https://github.com/user-attachments/assets/fa20d61a-38fc-4d10-ae2e-c7e5e9655c03)
 
