@@ -634,4 +634,7 @@ And that’s why defenders care about it.
 **The demonstration video is attached for reference**
 https://github.com/user-attachments/assets/1ee35fab-2194-40bb-bf52-6a689aefae8a
 
+![APC EARLY BIRD Injection](https://github.com/user-attachments/assets/fa20d61a-38fc-4d10-ae2e-c7e5e9655c03)
+
+
 <img width="1600" height="401" alt="image" src="https://github.com/user-attachments/assets/b5b7c5ce-a212-4918-a89d-0e47c232bdd1" />
