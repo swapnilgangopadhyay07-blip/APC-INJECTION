@@ -72,11 +72,18 @@ So now WHAT IS A PROCESS IN A COMPUTER?
 
  *STATES IN A PROCESS*
  1  NEW (being created)
+ 
+ 
  2  READY (Waiting for CPU)
+ 
  3  RUNNING (executing on CPU)
+ 
  4  WAITING/BLOCKED
+ 
  5  READY SUSPENDED (ready, but out of RAM)
+ 
  6  BLOCKED SUSPENDED (Waiting for I/O/event and out of RAM)
+ 
  7  TERMINATED/EXIT (finished) 
 
 
