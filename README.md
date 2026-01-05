@@ -119,8 +119,9 @@ For more simple breakdown we can refer to the figure below:
 
 <img width="1120" height="561" alt="image" src="https://github.com/user-attachments/assets/e9ba385f-3037-4795-9238-57d7cd6c1cc4" />
 
-When APC Injection is done it needs a  _**VIRTUAL MEMORY**_ but What is a Virtual Memory?
+When APC Injection is done it needs a Virtual Memory.Lets understand this
 
+# **VIRTUAL MEMORY**
 Virtual memory is a technique used by an operating system that lets programs think they have a large, continuous memory space, even though the actual RAM is limited and scattered in different places.
 
 in other words Virtual memory makes each process think it owns all memory.
@@ -194,11 +195,11 @@ There are some important points that must be noted:
 
    Since APC INJECTION is more about using THREADS ,
 
-   in programs to pinpoint a specific thread we need a unique id right? And here comes the role of _HANDLE_ which 
-
-   is the OS-approved reference that allows safe and controlled operations on that exact thread.
-
-
+   in programs to pinpoint a specific thread we need a unique id right? And here comes the role of **HANDLE**
+ 
+   # **HANDLE**
+      It is the OS-approved reference that allows safe and controlled operations on that exact thread.
+ 
   - A Handle is a unique identifier that gives access to a specific thread or process that an attacker can use to ADD their APC to the TARGETS thread queue.
 
     simplying it the process or thread is a room and handle is a KEY to that room .
