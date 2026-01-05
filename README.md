@@ -141,7 +141,8 @@ well a Virtal Memory also need permission to **READ , WRITE AND EXECUTE** an ass
 
 Now each Process has its own private virtual memory that is protected from other processes
 
-that takes us to a brief note of **MEMORY PERMISSIONS (R/W/X)** :
+that takes us to a brief note of 
+# **MEMORY PERMISSIONS (R/W/X)** 
 
 * **Read (R):** Allows a program to read data from a memory location.
 * **Write (W):** Allows a program to modify or store data in a memory location.
@@ -152,8 +153,8 @@ that takes us to a brief note of **MEMORY PERMISSIONS (R/W/X)** :
   In contect to the APC INJECTION Shellcode (malicious code) is written into the virtual memory space of the target process _(ex-notepad.exe)_.
 
 
-  Even if there are permissions for VirtualallocEx() attackers can misuse the memory by using **SHELL CODE** but what is it ?
-
+  Even if there are permissions for VirtualallocEx() attackers can misuse the memory by using shell code but what is it ?
+# **SHELL CODE** 
 
   A Shell Code is basically a A malicious Payload (CODE) that can make our system Vulnerable , but to run this payload in Virtual Memory the attacker needs to
   write it in a memory location with EXECUTE(X) permissions . It runs directly from the memory (ex - RAM ) of the machine i.e insted of running a program like
@@ -180,7 +181,7 @@ There are some important points that must be noted:
 
    But before we talk about APC there is one more important thing and that is **WINDOWS API**
 
-   Now what is WINDOWS API ? 
+   # **WINDOWS API** 
 
   -In simple words these are the commands through which programs ask windows to run/do things .
 
@@ -632,3 +633,4 @@ And that’s why defenders care about it.
 **The demonstration video is attached for reference**
 https://github.com/user-attachments/assets/1ee35fab-2194-40bb-bf52-6a689aefae8a
 
+<img width="1600" height="401" alt="image" src="https://github.com/user-attachments/assets/b5b7c5ce-a212-4918-a89d-0e47c232bdd1" />
