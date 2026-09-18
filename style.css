@@ -1,33 +1,111 @@
 :root {
-  --bg-color: #0d1117;        /* GitHub-style dark background */
-  --card-bg: #161b22;         /* Slightly lighter container contrast */
-  --text-color: #c9d1d9;      /* Off-white readable text */
-  --accent-color: #58a6ff;    /* Clean blue links */
-  --border-color: #30363d;
+  /* Sapphire Blue & Dark Violet Palette */
+  --bg-main: #0a0c10;
+  --bg-card: #12161f;
+  --text-main: #e6edf3;
+  --text-muted: #8b949e;
+  --accent-blue: #58a6ff;
+  --accent-purple: #bc8cff;
+  --border-color: #21262d;
+  --code-bg: #161b22;
+}
+
+/* Base resets */
+* {
+  box-sizing: border-box;
 }
 
 body {
-  background-color: var(--bg-color);
-  color: var(--text-color);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  line-height: 1.6;
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 2rem;
+  margin: 0;
+  padding: 2rem 1rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: var(--text-main);
+  background-color: var(--bg-main);
+  
+  /* Blocky/Isometric Geometric Background Pattern */
+  background-image: 
+    linear-gradient(30deg, #161b22 12%, transparent 12.5%, transparent 87%, #161b22 87.5%, #161b22),
+    linear-gradient(150deg, #161b22 12%, transparent 12.5%, transparent 87%, #161b22 87.5%, #161b22),
+    linear-gradient(30deg, #161b22 12%, transparent 12.5%, transparent 87%, #161b22 87.5%, #161b22),
+    linear-gradient(150deg, #161b22 12%, transparent 12.5%, transparent 87%, #161b22 87.5%, #161b22),
+    linear-gradient(60deg, #21262d 25%, transparent 25.5%, transparent 75%, #21262d 75%, #21262d),
+    linear-gradient(60deg, #21262d 25%, transparent 25.5%, transparent 75%, #21262d 75%, #21262d);
+  background-size: 80px 140px;
+  background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
+  background-attachment: fixed;
 }
 
+/* Content Container Card */
+.markdown-body, main, container, body > div {
+  max-width: 850px;
+  margin: 0 auto;
+  background: var(--bg-card);
+  padding: 2.5rem;
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-main);
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 0.3em;
+  margin-top: 1.5em;
+}
+
+h1 {
+  color: var(--accent-blue);
+}
+
+/* Links */
 a {
-  color: var(--accent-color);
+  color: var(--accent-blue);
   text-decoration: none;
+  transition: color 0.2s ease;
 }
 
 a:hover {
+  color: var(--accent-purple);
   text-decoration: underline;
 }
 
-code, pre {
-  background-color: var(--card-bg);
+/* Blockquotes */
+blockquote {
+  margin: 1rem 0;
+  padding: 0.5rem 1rem;
+  color: var(--text-muted);
+  border-left: 4px solid var(--accent-purple);
+  background: rgba(188, 140, 255, 0.05);
+  border-radius: 0 6px 6px 0;
+}
+
+/* Code & Pre Blocks */
+code {
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+  background-color: var(--code-bg);
   border: 1px solid var(--border-color);
+  padding: 0.2em 0.4em;
   border-radius: 6px;
-  padding: 0.2rem 0.4rem;
+  color: var(--accent-purple);
+}
+
+pre {
+  background-color: var(--code-bg);
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  overflow-x: auto;
+}
+
+pre code {
+  background: none;
+  border: none;
+  padding: 0;
+  color: var(--text-main);
+}
+
+/* Lists */
+ul li::marker {
+  color: var(--accent-blue);
 }
